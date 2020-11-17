@@ -1,3 +1,4 @@
-## Ejemplo de uso de mockito
+## Mocking
 
-Para completar
+1. Ejemplo de uso de Mock propio
+2. Ejemplo de uso del framework Mockito
