@@ -1,6 +1,6 @@
-package mocks;
+package fiuba.algo3.ejemploMockito;
 
-import model.IVehiculo;
+import fiuba.algo3.ejemploMockito.modelo.IVehiculo;
 
 public class VehiculoMock implements IVehiculo {
 	

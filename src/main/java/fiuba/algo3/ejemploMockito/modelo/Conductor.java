@@ -1,4 +1,4 @@
-package model;
+package fiuba.algo3.ejemploMockito.modelo;
 
 public class Conductor {
 

@@ -1,4 +1,4 @@
-package test;
+package fiuba.algo3.ejemploMockito;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
@@ -6,11 +6,11 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import model.Conductor;
-import model.IVehiculo;
+import fiuba.algo3.ejemploMockito.modelo.Conductor;
+import fiuba.algo3.ejemploMockito.modelo.IVehiculo;
 
 public class ConductorTest {
 
@@ -26,7 +26,7 @@ public class ConductorTest {
 		
 		boolean ofendido = true;
 		
-		Assert.assertTrue(conductor.maniobraFrenadoPacifica(ofendido));
+		assertTrue(conductor.maniobraFrenadoPacifica(ofendido));
 		
 		verify(vehiculoMock,times(1)).tocarBocina();
 		verify(vehiculoMock,times(1)).frenar();
@@ -45,7 +45,7 @@ public class ConductorTest {
 		
 		boolean ofendido = false;
 		
-		Assert.assertTrue(conductor.maniobraFrenadoPacifica(ofendido));
+		assertTrue(conductor.maniobraFrenadoPacifica(ofendido));
 		
 		verify(vehiculoMock,never()).tocarBocina();
 		verify(vehiculoMock,times(1)).frenar();
